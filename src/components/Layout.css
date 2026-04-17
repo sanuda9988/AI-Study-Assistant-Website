@@ -1,0 +1,31 @@
+.top-nav {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  margin: 16px;
+  border-radius: var(--radius-full);
+  z-index: 10;
+  flex-shrink: 0;
+}
+
+.user-profile .avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  background: var(--accent-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: white;
+}
+
+.page-content {
+  flex: 1;
+  padding: 0 16px 16px 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}

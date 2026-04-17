@@ -1,0 +1,93 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 20px;
+}
+
+.chat-header h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.chat-window {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-width: 900px;
+  width: 100%;
+}
+
+.chat-history {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.chat-bubble {
+  display: flex;
+  gap: 16px;
+  max-width: 80%;
+}
+
+.bot-bubble {
+  align-self: flex-start;
+}
+
+.user-bubble {
+  align-self: flex-end;
+  flex-direction: row-reverse;
+}
+
+.bubble-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: rgba(255,255,255,0.05);
+}
+
+.bot-bubble .bubble-icon {
+  background: rgba(139, 92, 246, 0.2);
+  color: var(--accent-primary);
+}
+
+.user-bubble .bubble-icon {
+  background: var(--accent-secondary);
+  color: white;
+}
+
+.bubble-content {
+  background: rgba(255,255,255,0.05);
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.user-bubble .bubble-content {
+  background: rgba(59, 130, 246, 0.15);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.chat-input-area {
+  display: flex;
+  gap: 12px;
+  padding: 20px;
+  background: rgba(0,0,0,0.2);
+  border-top: 1px solid var(--border-color);
+}
+
+.btn-icon {
+  width: 44px;
+  height: 48px;
+  padding: 0;
+  border-radius: var(--radius-md);
+}
